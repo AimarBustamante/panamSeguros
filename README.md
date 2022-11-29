@@ -2,4 +2,4 @@
 
 This is my first paid project.
 
-Live site: 
+Live site: https://aimarbustamante.github.io/panamSeguros/
