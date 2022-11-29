@@ -1,3 +1,5 @@
+//* Nav-Menu Function
+
 (function(){
     const listElements = document.querySelectorAll('.menu__item--show');
     const list = document.querySelector('.menu__links');
@@ -55,3 +57,26 @@
 
 
 })();
+
+//* Pricing-Section 
+
+// Toggle btn
+const toggler = document.querySelector(".toggler");
+//Insurance Entities
+const assa = document.getElementById("assa");
+const fedpa = document.getElementById("fedpa");
+const ancon = document.getElementById("ancon");
+
+toggler.addEventListener("change", ()=>{
+    if(toggler.checked){
+        // 3 Cuotas
+        assa.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
+        fedpa.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
+        ancon.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
+    }else{
+        // 1 Cuota
+        assa.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
+        fedpa.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
+        ancon.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
+    }
+})

@@ -67,14 +67,15 @@ b{
 }
 
 .img__logo{
+    margin-top: 10px;
     width: 150px;
-    /* height: 120px; */
 }
 
 .menu__links{
     height: 100%;
     transition: transform .5s;
     display: flex;
+    z-index: 10;
 }
 
 .menu__item{
@@ -161,8 +162,133 @@ b{
     margin: 30px 0;
 }
 
-.presentation-paragraph{
-    line-height: 1.5;
+/** --- Pricing --- **/
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: var(--Middle-Grey);
+    color: var(--White);
+}
+
+.pricing-option{
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
+
+.card-btn{
+    color: var(--White);
+}
+
+.pricing-container{
+    text-align: center;
+    width: 1100px;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.toggle-switch{
+    display: flex;
+    height: 3   0px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.toggler{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: var(--Green);
+    border-radius: 25px;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.toggler::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: var(--White);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    transition: .2s;
+}
+
+.toggler:checked::before{
+    right: 55%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card{
+    height: 100%;
+    width: 32%;
+    background-color: var(--Light-Grey);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-price{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3>span{
+    font-size: 1rem;
+}
+
+.card ul{
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.card ul li::before{
+    content: "•";
+    margin-right: .5rem;
+    color: var(--Green);
+    font-size: 1.5rem;
+
+}
+
+.card-btn{
+    margin-top: 1rem;
+    width: 100%;
+    background-color:  transparent;
+    border: 1px solid var(--Green);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.card-btn:hover{
+    background-color: var(--Green);
+    font-size: 1.2rem;
+    transition: .3s;
 }
 
 /** --- Payment --- **/
@@ -246,6 +372,33 @@ b{
     line-height: 1.5;
 }
 
+/** ---- Responsive for Tablets & Mobile ---- **/
+
+@media (max-width: 1112px){
+    
+    /** --- Pricing --- **/
+
+    .cards{
+        justify-content: center;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2rem;
+    }
+
+}
+
+@media (max-width: 848px){
+    
+    /** --- Pricing --- **/
+
+    .card{
+        width: 50%;
+    }
+
+}
+
 @media (max-width: 768px){
 
     /** ---- Header ---- **/
@@ -312,6 +465,17 @@ b{
 
     /** ---- Main ---- **/
 
+    /** --- Pricing --- **/
+
+    .cards{
+        justify-content: center;
+    }
+
+    .card{
+        width: 40%;
+        margin: 2rem;
+    }
+
     /** --- Payment --- **/
 
     .payment-box{
@@ -327,5 +491,25 @@ b{
         justify-content: center;
     }
     
+
+}
+
+@media (max-width: 848px){
+    
+    /** --- Pricing --- **/
+
+    .card{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 500px){
+    
+    /** --- Pricing --- **/
+
+    .card{
+        width: 90%;
+    }
 
 }
