@@ -62,21 +62,55 @@
 
 // Toggle btn
 const toggler = document.querySelector(".toggler");
-//Insurance Entities
+//Seguros de Auto Particular
 const assa = document.getElementById("assa");
 const fedpa = document.getElementById("fedpa");
 const ancon = document.getElementById("ancon");
+const suramericana = document.getElementById("suramericana");
 
+
+//Toggler 
 toggler.addEventListener("change", ()=>{
     if(toggler.checked){
         // 3 Cuotas
+        //Seguros de Auto Particular 
         assa.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
         fedpa.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
         ancon.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
+        suramericana.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Suramericana
     }else{
         // 1 Cuota
+        // Seguros de Auto Particular
         assa.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
         fedpa.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
         ancon.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
+        suramericana.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
+    }
+})
+
+// Togglebtn 
+const togglerSecond = document.querySelector("toggler--second")
+
+//Seguros de Auto Comercial
+const seguro1 = document.getElementById("seguro1");
+const seguro2 = document.getElementById("seguro2");
+const seguro3 = document.getElementById("seguro3");
+const seguro4 = document.getElementById("seguro4");
+
+togglerSecond.addEventListener("change", ()=>{
+    if(togglerSecond.checked){
+        // 3 Cuotas
+        //Seguros de Auto Particular 
+        seguro1.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
+        seguro2.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
+        seguro3.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
+        seguro4.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Suramericana
+    }else{
+        // 1 Cuota
+        // Seguros de Auto Particular
+        seguro1.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
+        seguro2.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
+        seguro3.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
+        seguro4.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
     }
 })
