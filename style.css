@@ -196,7 +196,7 @@ b{
     font-size: 1.5rem;
 }
 
-.toggle-switch, .toggle-switch--second, .toggler-switch--third{
+.toggle-switch, .toggle-switch--second, .toggler-switch--third, .toggle-switch--fourth{
     display: flex;
     height: 3   0px;
     width: 100%;
@@ -205,7 +205,7 @@ b{
     margin-bottom: 1.5rem;
 }
 
-.toggler, .toggler--second, .toggler--third{
+.toggler, .toggler--second, .toggler--third, .toggler--fourth{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -217,7 +217,7 @@ b{
     position: relative;
 }
 
-.toggler::before, .toggler--second::before, .toggler--third::before{
+.toggler::before, .toggler--second::before, .toggler--third::before,.toggler--fourth::before{
     content: "";
     width: 16px;
     height: 16px;
@@ -230,7 +230,7 @@ b{
     transition: .2s;
 }
 
-.toggler:checked::before, .toggler--second:checked::before, .toggler--third:checked::before{
+.toggler:checked::before, .toggler--second:checked::before, .toggler--third:checked::before, .toggler--fourth:checked::before{
     right: 55%;
 }
 

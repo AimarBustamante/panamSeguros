@@ -142,4 +142,33 @@ togglerThird.addEventListener("change", ()=>{
     }
 })
 
+// togglerFourth
+const togglerFourth = document.querySelector(".toggler--fourth")
+
+//Seguros de Taxi
+const truck1 = document.getElementById("truck1");
+const truck2 = document.getElementById("truck2");
+const truck3 = document.getElementById("truck3");
+const truck4 = document.getElementById("truck4");
+
+togglerFourth.addEventListener("change", ()=>{
+    if(togglerFourth.checked){
+        // 3 Cuotas
+        //Seguros de Auto Particular 
+        truck1.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
+        truck2.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
+        truck3.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
+        truck4.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Suramericana
+    }else{
+        // 1 Cuota
+        // Seguros de Auto Particular
+        truck1.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
+        truck2.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
+        truck3.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
+        truck4.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
+    }
+})
+
+
+
 
