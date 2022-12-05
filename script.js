@@ -72,12 +72,12 @@ const suramericana = document.getElementById("suramericana");
 //toggler 
 toggler.addEventListener("change", ()=>{
     if(toggler.checked){
-        // 3 Cuotas
+        // 2 Cuotas
         //Seguros de Auto Particular 
-        assa.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
-        fedpa.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
-        ancon.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
-        suramericana.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Suramericana
+        assa.innerHTML = `$200<span>/ 2 cuotas </span>`; //Assa
+        fedpa.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Fedpa
+        ancon.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Ancon
+        suramericana.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Suramericana
     }else{
         // 1 Cuota
         // Seguros de Auto Particular
@@ -108,10 +108,10 @@ togglerSecond.addEventListener("change", ()=>{
     }else{
         // 1 Cuota
         // Seguros de Auto Particular
-        seguro1.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
-        seguro2.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
-        seguro3.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
-        seguro4.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
+        seguro1.innerHTML = `$19<span>/ 2 cuotas </span>`; //Assa
+        seguro2.innerHTML = `$99<span>/ 2 cuotas </span>`; //Fedpa
+        seguro3.innerHTML = `$99<span>/ 2 cuotas </span>`; //Ancon
+        seguro4.innerHTML = `$99<span>/ 2 cuotas </span>`; //Suramericana
     }
 })
 
@@ -168,7 +168,3 @@ togglerFourth.addEventListener("change", ()=>{
         truck4.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
     }
 })
-
-
-
-
