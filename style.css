@@ -125,7 +125,7 @@ b{
 }
 
 .menu__link--inside{
-    padding: 30px 100px 30px 20px;
+    padding: 10px 100px 10px 10px;
 }
 
 .menu__link--inside:hover{
@@ -200,11 +200,6 @@ b{
     font-size: 1.5rem;
 }
 
-.card-plan li:hover{
-    scale: 1.1;
-    transition: .3s;
-}
-
 .toggle-switch, .toggle-switch--second, .toggler-switch--third, .toggle-switch--fourth{
     display: flex;
     height: 3   0px;
@@ -254,16 +249,31 @@ b{
 
 .card{
     height: 100%;
+    min-height: 850px;
     width: 32%;
     background-color: var(--Light-Grey);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 2rem;
     text-align: center;
     margin-bottom: 30px;
 }
 
-.card-title{
-    font-size: 1.5rem;
+figure{
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.card-img{
+    width: 100%;
+}
+
+.card-img--white{
+    background-color: var(--White);
+    border-radius: 10px;
+}
+
+.card-advice{
     margin-bottom: 1rem;
 }
 
@@ -274,6 +284,11 @@ b{
 
 h3>span{
     font-size: 1rem;
+}
+
+.card-paragraph{
+    font-size: 1.2rem;
+    margin: 20px 0 0px 0;
 }
 
 .card ul{
@@ -294,7 +309,7 @@ h3>span{
     display: block;
     margin-top: 1.3rem;
     width: 100%;
-    background-color:  transparent;
+    background-color: transparent;
     border: 1px solid var(--Green);
     font-size: 1rem;
     padding: 1rem;
@@ -330,11 +345,11 @@ h3>span{
     font-weight: 500;
 }
 
+
 .payment-img{
     display: block;
-    margin: auto;
-    width: 100px;
-    height: 100px;
+    margin: 0 auto;
+    width: 40%;
 }
 
 .payment-img:hover{
@@ -354,10 +369,20 @@ h3>span{
     width: 90%;
     max-width: 400px;
     padding: 4.5em 3em;
+    border: 2px solid #eee;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
     text-align: center;
     margin-bottom: 5em;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc, -.5rem -.5rem 1rem #fff;
+}
+
+.form:hover{
+    box-shadow: .5rem .5rem 1rem #fff, -.5rem -.5rem 1rem #ccc; 
+}
+
+.form:active{
+    box-shadow: inset .2rem .2rem 1rem #fff, inset -.2rem -.2rem 1rem #ccc; 
 }
 
 .form-title{

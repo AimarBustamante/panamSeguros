@@ -60,31 +60,42 @@
 
 //* Pricing-Section 
 
-// Toggle btn
+// togglerFirst
 const toggler = document.querySelector(".toggler");
 //Seguros de Auto Particular
 const assa = document.getElementById("assa");
 const fedpa = document.getElementById("fedpa");
-const ancon = document.getElementById("ancon");
-const suramericana = document.getElementById("suramericana");
-
 
 //toggler 
 toggler.addEventListener("change", ()=>{
     if(toggler.checked){
         // 2 Cuotas
         //Seguros de Auto Particular 
-        assa.innerHTML = `$200<span>/ 2 cuotas </span>`; //Assa
-        fedpa.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Fedpa
-        ancon.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Ancon
-        suramericana.innerHTML = `$1000<span>/ 2 cuotas </span>`; //Suramericana
+        assa.innerHTML = `$135<span>/ 2 cuotas </span>`; //Assa
+        fedpa.innerHTML = `$56.21<span>/ 2 cuotas </span>`; //Fedpa
     }else{
         // 1 Cuota
         // Seguros de Auto Particular
-        assa.innerHTML = `$19<span>/ 1 cuota </span>`; //Assa
-        fedpa.innerHTML = `$99<span>/ 1 cuota </span>`; //Fedpa
-        ancon.innerHTML = `$99<span>/ 1 cuota </span>`; //Ancon
-        suramericana.innerHTML = `$99<span>/ 1 cuota </span>`; //Suramericana
+        assa.innerHTML = `$135<span>/ 1 cuota </span>`; //Assa
+        fedpa.innerHTML = `$107.06<span>/ 1 cuota </span>`; //Fedpa
+    }
+})
+
+// togglerFirst VIP
+const togglerVIP = document.querySelector(".toggler-first--VIP");
+//Seguros de Auto Particular-VIP
+const fedpaVIP = document.getElementById("fedpa-vip");
+
+//toggler 
+togglerVIP.addEventListener("change", ()=>{
+    if(togglerVIP.checked){
+        // 2 Cuotas
+        //Seguros de Auto Particular 
+        fedpaVIP.innerHTML = `$69.31<span>/ 2 cuotas </span>`; //Fedpa
+    }else{
+        // 1 Cuota
+        // Seguros de Auto Particular
+        fedpaVIP.innerHTML = `$132<span>/ 1 cuota </span>`; //Fedpa
     }
 })
 
