@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanamSeguros</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS - SWIPER -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <!-- JS -->
-    <script defer src="script.js"></script>
+    <script defer src="js/script.js"></script>
+    <!-- JS - SWIPER -->
+    <script defer src="js/swiper-bundle.min.js"></script>
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,30 +56,71 @@
         
                         <ul class="menu__nesting">
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">ASSA Asistencia 300-2424</a>
-                            </li>
+                            <div class="menu__link--inside">
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">FEDPA Asistencia 303-2466</a>
-                            </li>
+                                <h3>ASSA</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 300-2424</i></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=50766012772" target="_blank"><i class='bx bxl-whatsapp'></i> 6601-2772</a></li>
+                                </ul>
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">ANCON Asistencia 302 2444</a>
-                            </li>
+                            </div>
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">SURAMERICANA Asistencia 800 8888</a>
-                            </li>
+                            <div class="menu__link--inside">
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">INTERNACIONAL Asistencia 265 2881</a>
-                            </li>
+                                <h3>FEDPA</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 303-2466</i></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=50763208722" target="_blank"><i class='bx bxl-whatsapp'></i> 6320-8722</a></li>
+                                </ul>
 
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">MAPFRE Asistencia 390-9030</a>
-                            </li>
+                            </div>
 
+                            <div class="menu__link--inside">
+                                
+                                <h3>ANCON</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 302-2444</i></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=50762333882" target="_blank"><i class='bx bxl-whatsapp'></i> 6233-3882</a></li>
+                                </ul>
+                                
+                            </div>
+
+                            <div class="menu__link--inside">
+
+                                <h3>SURAMERICANA</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 800-8888</i></li>
+                                </ul>
+                                
+                            </div>
+
+                            <div class="menu__link--inside">
+                                
+                                <h3>INTERNACIONAL DE SEGUROS</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 265-2381</i></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=50766662881" target="_blank"><i class='bx bxl-whatsapp'></i>6666-2881</a></li>
+                                </ul>
+
+                            </div>  
+
+                            <div class="menu__link--inside">
+                                
+                                <h3>MAPFRE</h3>
+                                
+                                <ul>
+                                    <li><i class='bx bx-phone'> 390-9090</i></li>
+                                    <li><a href="https://api.whatsapp.com/send?phone=50763199457" target="_blank"><i class='bx bxl-whatsapp'></i> 6319-9457</a></li>
+                                </ul>
+                                
+                            </div>
+                            
                         </ul>
                     </li>
                 </ul>
@@ -115,14 +160,14 @@
                 <div class="cards">
                     <!--**- Auto Particular - Pricing Section -**--> 
                     <!--**-- Auto Particular - Pricing 1 --**-->
-                    <div class="card">
-
+                    <div class="card swiper-slide">
+                        
                         <figure >
                             <img src="Img/assa-seguros.webp" alt="" class="card-img card-img--white">
                         </figure>
                         <h3 class="card-price" id="assa">$135<span>/ 1 cuota</span></h3>
                         <p class="card-advice">*Pagos solo con tarjeta visa o mastercard</p>
-
+                        
                         <ul class="card-plan">
                             <li>Lesiones Corporales: 10 000</li>
                             <li>Daños a la Propiedad: 10 000</li>
@@ -140,10 +185,10 @@
                         <a href="#form" class="card-btn">Elegir</a>
 
                     </div>
-
+                
                     <!--**-- Auto Particular - Pricing 2 --**-->
                     <div class="card" id="card-2">
-
+                        
                         <figure>
                             <img src="Img/fedpa-logo.png" alt="" class="card-img">
                         </figure>
@@ -153,14 +198,14 @@
                             <li>Lesiones Corporales: 5 000</li>
                             <li>Daños a la Propiedad: 5 000</li>
                             <li>Gastos Funerarios Conductor: 1 500</li>
-
+                            
                             <p class="card-paragraph">Coberturas:</p>
                             <li>Inspección</li>
                             <li>Ambulancia</li>
                             <li>1 grua por accidente</li>
                             <li>Asistencia legal</li>
                         </ul>
-
+                        
                         <a href="#form" class="card-btn">Elegir</a>
                     </div>
 
@@ -184,18 +229,18 @@
                             <li>Pase corriente, combustible</li>
                             <li>Cerrajeria</li>
                         </ul>
-
+                        
                         <a href="#form" class="card-btn">Elegir</a>
 
                     </div>    
-
+                    
                 </div>
 
                 <!--**- Auto Particular - Pricing Section - VIP **--> 
                 <div class="pricing-subtitle">
                     <h3 class="pricing-option" id="car-1"><i class='bx bx-diamond bx-sm'></i> Seguro de Auto Particular VIP</h3>
                 </div>
-
+                
                 <!-- ** Toggler VIP ** -->
                 <div class="toggle-switch">
                     <span>2 cuotas</span>
