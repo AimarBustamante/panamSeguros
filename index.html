@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/favicon-32x32.png" type="image/x-icon">
     <title>PanamSeguros</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -19,13 +20,16 @@
 <body>
 
     <!--**---- Header ----**--> 
-    <header class="header">
+    <header class="header" id="header">
 
         <!--**--- Nav-Menu ---**-->
         <nav class="menu">
 
             <section class="menu__container">
-                <img src="Img/panamseguros-logo.png" alt="img__logo" class="img__logo">
+
+                <a href="#header">
+                    <img src="Img/panamseguros-logo.png" alt="img__logo" class="img__logo">
+                </a>
     
                 <ul class="menu__links">
 
@@ -148,167 +152,51 @@
 
                 <!-- ** Toggler ** -->
                 <div class="toggle-switch">
-                    <span>2 cuotas</span>
+                    <span>1 cuotas</span>
                     <input type="checkbox" class="toggler">
-                    <span>1 cuota</span>
+                    <span>2 cuota</span>
                 </div>
 
                 <div class="cards">
                     <!--**- Auto Particular - Pricing Section -**--> 
-                    <!--**-- Auto Particular - Pricing 1 --**-->
-                    <div class="card swiper-slide">
-                        
-                        <figure >
-                            <img src="Img/assa-seguros.webp" alt="" class="card-img card-img--white">
-                        </figure>
-                        <h3 class="card-price" id="assa">$135<span>/ 1 cuota</span></h3>
-                        <p class="card-advice">*Pagos solo con tarjeta visa o mastercard</p>
-                        
-                        <ul class="card-plan">
-                            <li>Lesiones Corporales: 10 000</li>
-                            <li>Daños a la Propiedad: 10 000</li>
-                            <li>Gastos Funerarios Conductor: 1 500</li>
-                            <li>Gastos Medicos: 500/2500</li>
-                            <li>Muerte Accidental Conductor y Pasajeros: 5 000/25 000</li>
-
-                            <p class="card-paragraph">Coberturas:</p>
-                            <li>Inspección</li>
-                            <li>Ambulancia</li>
-                            <li>1 grua por accidente</li>
-                        </ul>
-
-
-                        <a href="#form" class="card-btn">Elegir</a>
-
-                    </div>
                 
-                    <!--**-- Auto Particular - Pricing 2 --**-->
+                    <!--**-- Auto Particular - Pricing 1 --**-->
                     <div class="card" id="card-2">
                         
                         <figure>
                             <img src="Img/fedpa-logo.png" alt="" class="card-img">
                         </figure>
                         <h3 class="card-price" id="fedpa">$107.06<span>/ 1 cuota</span></h3>
-
-                        <ul class="card-plan">
-                            <li>Lesiones Corporales: 5 000</li>
-                            <li>Daños a la Propiedad: 5 000</li>
-                            <li>Gastos Funerarios Conductor: 1 500</li>
-                            
-                            <p class="card-paragraph">Coberturas:</p>
-                            <li>Inspección</li>
-                            <li>Ambulancia</li>
-                            <li>1 grua por accidente</li>
-                            <li>Asistencia legal</li>
-                        </ul>
                         
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="Seguro Particular/Particular-Fedpa.html" class="card-btn" target="_blank">Ver más</a>
                     </div>
 
-                    <!--**-- Auto Particular - Pricing 3 --**-->
+                    <!--**-- Auto Particular - Pricing 2 --**-->
                     <div class="card" id="card-3">
 
                         <figure>
                             <img src="Img/internacional-de-seguros.svg" alt="internacional-de-seguros" class="card-img card-img--white">
                         </figure>
                         <h3 class="card-price" id="ancon">$102.01<span>/ 1 cuota</span></h3>
-
-                        <ul class="card-plan">
-                            <li>Lesiones Corporales: 5 000</li>
-                            <li>Daños a la Propiedad: 5 000</li>
-                            
-                            <p class="card-paragraph">Coberturas:</p>
-                            <li>Inspección</li>
-                            <li>Ambulancia</li>
-                            <li>1 grua por accidente</li>
-                            <li>Cambio de llanta</li>
-                            <li>Pase corriente, combustible</li>
-                            <li>Cerrajeria</li>
-                        </ul>
                         
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="Seguro Particular/Particular-IS.html" class="card-btn" target="_blank">Ver más</a>
 
-                    </div>    
-                    
-                </div>
+                    </div>   
 
-                <!--**- Auto Particular - Pricing Section - VIP **--> 
-                <div class="pricing-subtitle">
-                    <h3 class="pricing-option" id="car-1"><i class='bx bx-diamond bx-sm'></i> Seguro de Auto Particular VIP</h3>
-                </div>
-                
-                <!-- ** Toggler VIP ** -->
-                <div class="toggle-switch">
-                    <span>2 cuotas</span>
-                    <input type="checkbox" class="toggler toggler-first--VIP">
-                    <span>1 cuota</span>
-                </div>
-
-                <div class="cards">
-
-                    <!--**-- Auto Particular - Pricing 1 - VIP --**-->
+                    <!--**-- Auto Particular - Pricing 3 --**-->
                     <div class="card">
-
+                        
                         <figure >
                             <img src="Img/assa-seguros.webp" alt="" class="card-img card-img--white">
                         </figure>
-                        <h3 class="card-price" id="assa">$160<span>/ 1 cuota </span></h3>
-                        <p class="card-advice">*Pagos solo con tarjeta visa o mastercard</p>
 
-                        <ul class="card-plan">
-                            <li>Lesiones Corporales: 10 000</li>
-                            <li>Daños a la Propiedad: 10 000</li>
-                            <li>Gastos Funerarios Conductor: 1 500</li>
-                            <li>Gastos Medicos: 500/2500</li>
-                            <li>Muerte Accidental Conductor y Pasajeros: 5 000/25 000</li>
+                        <h3 class="card-price" id="assa">$135<span>/ 1 cuota</span></h3>
 
-                            <p class="card-paragraph">Coberturas:</p>
-                            <li>Inspección</li>
-                            <li>Ambulancia</li>
-                            <li>3 gruas</li>
-                            <li>Cambio de llanta</li>
-                            <li>Pase corriente, combustible</li>
-                            <li>Cerrajeria</li>
-                        </ul>
-
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="Seguro Particular/Particular-ASSA.html" class="card-btn" target="_blank">Ver más</a>
 
                     </div>
-
-                    <!--**-- Auto Particular - Pricing 2 - VIP --**-->
-                    <div class="card" id="card-2">
-
-                        <figure>
-                            <img src="Img/fedpa-logo.png" alt="" class="card-img">
-                        </figure>
-                        <h3 class="card-price" id="fedpa-vip">$132<span>/ 1 cuota </span></h3>
-
-                        <ul class="card-plan">
-                            <li>Lesiones Corporales: 5 000</li>
-                            <li>Daños a la Propiedad: 10 000</li>
-                            <li>Gastos Medicos:500/2 000</li>
-                            <li>Muerte Accidental Conductor: 5 000</li>
-
-                            <p class="card-paragraph">Coberturas:</p>
-                            <li>Inspección</li>
-                            <li>Ambulancia</li>
-                            <li>2 gruas</li>
-                            <li>Asistencia legal</li>
-                            <li>Cambio de llanta</li>
-                            <li>Pase corriente, combustible</li>
-                            <li>Cerrajeria</li>
-                            <li>Mediphone</li>
-                            <li>Asistencia hogar</li>
-                            <li>Defensa penal</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
-                    </div>
-
+                    
                 </div>
-
-
 
                 <!--**- Auto Comercial - Pricing Section -**-->
                 <div class="pricing-subtitle" id="car-2">
@@ -332,16 +220,7 @@
                         <h2 class="card-title">ASSA</h2>
                         <h3 class="card-price" id="seguro1">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 2 --**-->
@@ -350,16 +229,7 @@
                         <h2 class="card-title">FEDPA</h2>
                         <h3 class="card-price" id="seguro2">$99<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 3 --**-->
@@ -368,16 +238,7 @@
                         <h2 class="card-title">ANCON</h2>
                         <h3 class="card-price" id="seguro3">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div>   
 
@@ -387,16 +248,7 @@
                         <h2 class="card-title">SURAMERICANA</h2>
                         <h3 class="card-price" id="seguro4">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div> 
 
@@ -424,16 +276,7 @@
                         <h2 class="card-title">ASSA</h2>
                         <h3 class="card-price" id="taxi1">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 2 --**-->
@@ -442,16 +285,7 @@
                         <h2 class="card-title">FEDPA</h2>
                         <h3 class="card-price" id="taxi2">$99<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 3 --**-->
@@ -460,16 +294,7 @@
                         <h2 class="card-title">ANCON</h2>
                         <h3 class="card-price" id="taxi3">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div>   
 
@@ -479,16 +304,7 @@
                         <h2 class="card-title">SURAMERICANA</h2>
                         <h3 class="card-price" id="taxi4">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div> 
 
@@ -515,16 +331,7 @@
                         <h2 class="card-title">ASSA</h2>
                         <h3 class="card-price" id="truck1">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 2 --**-->
@@ -533,16 +340,7 @@
                         <h2 class="card-title">FEDPA</h2>
                         <h3 class="card-price" id="truck2">$99<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
                     </div>
 
                     <!--**-- Auto Comercial - Pricing 3 --**-->
@@ -551,16 +349,7 @@
                         <h2 class="card-title">ANCON</h2>
                         <h3 class="card-price" id="truck3">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div>   
 
@@ -570,16 +359,7 @@
                         <h2 class="card-title">SURAMERICANA</h2>
                         <h3 class="card-price" id="truck4">$19<span>/ una cuota</span></h3>
 
-                        <ul class="card-plan">
-                            <li>Beneficio 1</li>
-                            <li>Beneficio 2</li>
-                            <li>Beneficio 3</li>
-                            <li>Beneficio 4</li>
-                            <li>Beneficio 5</li>
-                            <li>Beneficio 6</li>
-                        </ul>
-
-                        <a href="#form" class="card-btn">Elegir</a>
+                        <a href="#form" class="card-btn">Ver más</a>
 
                     </div> 
 
