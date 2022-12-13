@@ -69,33 +69,15 @@ const fedpa = document.getElementById("fedpa");
 //toggler 
 toggler.addEventListener("change", ()=>{
     if(toggler.checked){
-        // 2 Cuotas
-        //Seguros de Auto Particular 
-        assa.innerHTML = `$135<span>/ 2 cuotas </span>`; //Assa
-        fedpa.innerHTML = `$56.21<span>/ 2 cuotas </span>`; //Fedpa
-    }else{
-        // 1 Cuota
-        // Seguros de Auto Particular
-        assa.innerHTML = `$135<span>/ 1 cuota </span>`; //Assa
+        // 1 Cuotas
+        //Seguros de Auto Particular
         fedpa.innerHTML = `$107.06<span>/ 1 cuota </span>`; //Fedpa
-    }
-})
-
-// togglerFirst VIP
-const togglerVIP = document.querySelector(".toggler-first--VIP");
-//Seguros de Auto Particular-VIP
-const fedpaVIP = document.getElementById("fedpa-vip");
-
-//toggler 
-togglerVIP.addEventListener("change", ()=>{
-    if(togglerVIP.checked){
-        // 2 Cuotas
-        //Seguros de Auto Particular 
-        fedpaVIP.innerHTML = `$69.31<span>/ 2 cuotas </span>`; //Fedpa
+        assa.innerHTML = `$135<span>/ 1 cuota </span>`; //Assa
     }else{
-        // 1 Cuota
+        // 2 Cuotas
         // Seguros de Auto Particular
-        fedpaVIP.innerHTML = `$132<span>/ 1 cuota </span>`; //Fedpa
+        fedpa.innerHTML = `$56.21<span>/ 2 cuotas </span>`; //Fedpa 
+        assa.innerHTML = `$135<span>/ 2 cuotas </span>`; //Assa
     }
 })
 
@@ -110,14 +92,14 @@ const seguro4 = document.getElementById("seguro4");
 
 togglerSecond.addEventListener("change", ()=>{
     if(togglerSecond.checked){
-        // 3 Cuotas
+        // 1 Cuotas
         //Seguros de Auto Particular 
         seguro1.innerHTML = `$200<span>/ 3 cuotas </span>`; //Assa
         seguro2.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Fedpa
         seguro3.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Ancon
         seguro4.innerHTML = `$1000<span>/ 3 cuotas </span>`; //Suramericana
     }else{
-        // 1 Cuota
+        // 2 Cuota
         // Seguros de Auto Particular
         seguro1.innerHTML = `$19<span>/ 2 cuotas </span>`; //Assa
         seguro2.innerHTML = `$99<span>/ 2 cuotas </span>`; //Fedpa
