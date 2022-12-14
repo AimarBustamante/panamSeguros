@@ -170,8 +170,8 @@ b{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    background-color: var(--Middle-Grey);
-    color: var(--White);
+    /* background-color: var(--Middle-Grey); */
+    /* color: var(--White); */
 }
 
 .pricing-option{
@@ -248,6 +248,7 @@ b{
     height: 100%;
     width: 32%;
     background-color: var(--Light-Grey);
+    color: var(--White);
     border-radius: 10px;
     padding: 2rem;
     text-align: center;
@@ -298,7 +299,6 @@ h3>span{
     margin-right: .5rem;
     color: var(--Green);
     font-size: 1.5rem;
-
 }
 
 .card-btn{
