@@ -170,8 +170,8 @@ b{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
-    /* background-color: var(--Middle-Grey); */
-    /* color: var(--White); */
+    background-color: #979A9A;
+    color: var(--White);
 }
 
 .pricing-option{
