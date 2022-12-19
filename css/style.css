@@ -95,6 +95,11 @@ b{
     display: flex;
     height: 100%;
     align-items: center;
+    transition: .2s;
+}
+
+.menu__link:hover{
+    color: var(--Green);
 }
 
 .menu__arrow{
@@ -311,12 +316,12 @@ h3>span{
     padding: 1rem;
     border-radius: 5px;
     color: var(--White);
+    transition: .3s;
 }
 
 .card-btn:hover{
     background-color: var(--Green);
     font-size: 1.2rem;
-    transition: .3s;
 }
 
 /** --- Payment --- **/
@@ -340,11 +345,11 @@ h3>span{
 
 .payment-img{
     width: 60%;
+    transition: .5s;
 }
 
 .payment-img:hover{
     scale: 1.1;
-    transition: all .5s ease;
 }
 
 /** --- Form --- **/
